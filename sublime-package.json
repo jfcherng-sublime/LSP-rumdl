@@ -1,0 +1,78 @@
+{
+  "contributions": {
+    "settings": [
+      {
+        "file_patterns": [
+          "/LSP-rumdl.sublime-settings"
+        ],
+        "schema": {
+          "$id": "sublime://settings/LSP-rumdl",
+          "definitions": {
+            "LspRumdlSettings": {
+              "additionalProperties": false,
+              "properties": {},
+            },
+            "PluginConfig": {
+              "properties": {
+                "initializationOptions": {
+                  "properties": {
+                    "settings": {
+                      "$ref": "sublime://settings/LSP-rumdl#/definitions/LspRumdlSettings",
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "allOf": [
+            {
+              "$ref": "sublime://settings/LSP-plugin-base"
+            },
+            {
+              "$ref": "sublime://settings/LSP-rumdl#/definitions/PluginConfig"
+            }
+          ]
+        }
+      },
+      {
+        "file_patterns": [
+          "/*.sublime-project"
+        ],
+        "schema": {
+          "properties": {
+            "settings": {
+              "properties": {
+                "LSP": {
+                  "properties": {
+                    "LSP-rumdl": {
+                      "$ref": "sublime://settings/LSP-rumdl#/definitions/PluginConfig"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "file_patterns": [
+          "LSP.sublime-settings"
+        ],
+        "schema": {
+          "properties": {
+            "lsp_code_actions_on_save": {
+              "properties": {
+                "source.fixAll.rumdl": {
+                  "type": "boolean"
+                },
+                "source.organizeImports.rumdl": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+[
+    {
+        "caption": "Preferences: LSP-rumdl Settings",
+        "command": "edit_settings",
+        "args": {
+            "base_file": "${packages}/LSP-rumdl/LSP-rumdl.sublime-settings",
+            "default": "// Settings in here override those in \"LSP-rumdl/LSP-rumdl.sublime-settings\"\n{\n\t$0\n}\n"
+        }
+    }
+]
