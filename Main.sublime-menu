@@ -16,11 +16,11 @@
                 "id": "lsp-servers",
                 "children": [
                   {
-                    "caption": "LSP-ruff",
+                    "caption": "LSP-panache",
                     "command": "edit_settings",
                     "args": {
-                      "base_file": "${packages}/LSP-ruff/LSP-ruff.sublime-settings",
-                      "default": "// Settings in here override those in \"LSP-ruff/LSP-ruff.sublime-settings\"\n\n{\n\t$0\n}\n",
+                      "base_file": "${packages}/LSP-panache/LSP-panache.sublime-settings",
+                      "default": "// Settings in here override those in \"LSP-panache/LSP-panache.sublime-settings\"\n\n{\n\t$0\n}\n",
                     },
                   },
                 ],
